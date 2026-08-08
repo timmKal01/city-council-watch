@@ -1,0 +1,41 @@
+{
+    "title": "City Council Watch Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "cities": {
+            "title": "Cities",
+            "type": "array",
+            "editor": "json",
+            "description": "One entry per city, e.g. { \"client\": \"seattle\" }. The client code is the subdomain of that city's Legistar site (seattle.legistar.com -> \"seattle\").",
+            "prefill": [
+                { "client": "seattle" }
+            ]
+        },
+        "sinceDate": {
+            "title": "Matters introduced since",
+            "type": "string",
+            "description": "Only include legislative matters (ordinances, resolutions, etc.) introduced on or after this date (YYYY-MM-DD).",
+            "editor": "datepicker"
+        },
+        "keywordFilter": {
+            "title": "Keyword filter",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Only keep matters whose title contains one of these (case-insensitive). Leave empty for all matters."
+        },
+        "matterTypeFilter": {
+            "title": "Matter type filter",
+            "type": "array",
+            "editor": "stringList",
+            "description": "Only keep matters whose type exactly matches one of these (e.g. \"Ordinance\", \"Resolution\"). Leave empty for all types."
+        },
+        "includeUpcomingMeetings": {
+            "title": "Include upcoming meetings",
+            "type": "boolean",
+            "description": "Also fetch each city's upcoming council/committee meetings (from today onward).",
+            "default": true
+        }
+    },
+    "required": ["cities", "sinceDate"]
+}

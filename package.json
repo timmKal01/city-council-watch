@@ -1,0 +1,15 @@
+{
+    "name": "city-council-watch",
+    "version": "0.1.0",
+    "type": "module",
+    "description": "New ordinances/resolutions and upcoming council meetings per city, via each city's Legistar API.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6"
+    },
+    "scripts": {
+        "start": "node src/main.js"
+    }
+}
