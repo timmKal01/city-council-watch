@@ -89,3 +89,8 @@ after downloading everything.
 
 Billed per **city queried**, not per matter or meeting returned — a city
 with 50 new ordinances this month costs the same as one with 2.
+
+## Related products
+
+- [Federal Register Tracker](https://github.com/timmKal01/federal-register-tracker) — the federal-level equivalent: new proposed/final rules and comment deadlines
+- [Disaster Declaration Tracker](https://github.com/timmKal01/disaster-declaration-tracker) — another civic/government data source, for FEMA disaster declarations instead of council actions
