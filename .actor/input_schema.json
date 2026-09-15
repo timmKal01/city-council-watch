@@ -10,6 +10,9 @@
             "description": "One entry per city, e.g. { \"client\": \"seattle\" }. The client code is the subdomain of that city's Legistar site (seattle.legistar.com -> \"seattle\").",
             "prefill": [
                 { "client": "seattle" }
+            ],
+            "default": [
+                { "client": "seattle" }
             ]
         },
         "sinceDate": {
@@ -17,7 +20,8 @@
             "type": "string",
             "description": "Only include legislative matters (ordinances, resolutions, etc.) introduced on or after this date (YYYY-MM-DD).",
             "editor": "datepicker",
-            "prefill": "2024-01-01"
+            "prefill": "2024-01-01",
+            "default": "2024-01-01"
         },
         "keywordFilter": {
             "title": "Keyword filter",
