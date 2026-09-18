@@ -3,15 +3,19 @@
     "type": "object",
     "schemaVersion": 1,
     "properties": {
+        "client": {
+            "title": "City (for a single city)",
+            "type": "string",
+            "editor": "textfield",
+            "description": "Leave the Cities (multiple) field below empty to use this single-city shortcut instead. The client code is the subdomain of that city's Legistar site (seattle.legistar.com -> \"seattle\").",
+            "prefill": "seattle"
+        },
         "cities": {
-            "title": "Cities",
+            "title": "Cities (multiple)",
             "type": "array",
             "editor": "json",
-            "description": "One entry per city, e.g. { \"client\": \"seattle\" }. The client code is the subdomain of that city's Legistar site (seattle.legistar.com -> \"seattle\").",
+            "description": "For checking several cities in one run instead of one at a time. One entry per city, e.g. { \"client\": \"seattle\" }. Ignored if City above is filled in.",
             "prefill": [
-                { "client": "seattle" }
-            ],
-            "default": [
                 { "client": "seattle" }
             ]
         },
@@ -42,5 +46,5 @@
             "default": true
         }
     },
-    "required": ["cities", "sinceDate"]
+    "required": ["sinceDate"]
 }
