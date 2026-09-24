@@ -1,7 +1,7 @@
 {
     "actorSpecification": 1,
     "name": "city-council-watch",
-    "title": "City Council Watch — New Ordinances & Upcoming Meetings",
+    "title": "City Council Tracker: New Ordinances & Agendas",
     "description": "Given a list of cities, get new ordinances/resolutions filed since a date and upcoming council meeting agendas — pulled from each city's own Legistar API, the system behind most US city council websites.",
     "version": "0.1",
     "meta": {
