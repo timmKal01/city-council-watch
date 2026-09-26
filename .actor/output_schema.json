@@ -1,6 +1,6 @@
 {
     "actorOutputSchemaVersion": 1,
-    "title": "Output schema of City Council Watch — New Ordinances & Upcoming Meetings",
+    "title": "Output schema of City Council Watch: New Ordinances & Upcoming Meetings",
     "description": "Results are pushed to the default dataset, one record per item.",
     "properties": {
         "results": {

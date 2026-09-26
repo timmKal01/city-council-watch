@@ -4,7 +4,12 @@ import { fetchMatters, fetchUpcomingEvents } from './legistar.js';
 await Actor.init();
 
 const input = (await Actor.getInput()) ?? {};
-const { cities = [], sinceDate, keywordFilter = [], matterTypeFilter = [], includeUpcomingMeetings = true } = input;
+const { client: singleClient, cities: citiesInput, sinceDate, keywordFilter = [], matterTypeFilter = [], includeUpcomingMeetings = true } = input;
+
+// The single-city field (client) exists so a Store visitor never has to touch the raw JSON
+// "cities" editor just to check one city. It takes priority when filled in; "cities" is for the
+// bulk/multi-city case.
+const cities = singleClient ? [{ client: singleClient }] : (citiesInput?.length ? citiesInput : []);
 
 if (cities.length === 0) {
     throw new Error('No cities provided.');
