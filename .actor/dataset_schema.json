@@ -1,0 +1,73 @@
+{
+    "actorSpecification": 1,
+    "fields": {},
+    "views": {
+        "overview": {
+            "title": "Overview",
+            "transformation": {
+                "fields": [
+                    "kind",
+                    "file",
+                    "title",
+                    "type",
+                    "status",
+                    "body",
+                    "introDate",
+                    "agendaDate",
+                    "passedDate",
+                    "url",
+                    "client"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "kind": {
+                        "label": "Kind",
+                        "format": "text"
+                    },
+                    "file": {
+                        "label": "File",
+                        "format": "text"
+                    },
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "type": {
+                        "label": "Type",
+                        "format": "text"
+                    },
+                    "status": {
+                        "label": "Status",
+                        "format": "text"
+                    },
+                    "body": {
+                        "label": "Body",
+                        "format": "text"
+                    },
+                    "introDate": {
+                        "label": "Intro date",
+                        "format": "date"
+                    },
+                    "agendaDate": {
+                        "label": "Agenda date",
+                        "format": "date"
+                    },
+                    "passedDate": {
+                        "label": "Passed date",
+                        "format": "date"
+                    },
+                    "url": {
+                        "label": "URL",
+                        "format": "link"
+                    },
+                    "client": {
+                        "label": "Client",
+                        "format": "text"
+                    }
+                }
+            }
+        }
+    }
+}
