@@ -46,5 +46,5 @@
             "default": true
         }
     },
-    "required": ["sinceDate"]
+    "required": []
 }
